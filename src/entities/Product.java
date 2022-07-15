@@ -1,6 +1,9 @@
 package entities;
 
+import java.io.Serializable;
+
 public class Product {
+
 
     public String name;
     public double price;
