@@ -4,7 +4,7 @@ import devices.ComboDevice;
 import devices.ConcretePrinter;
 import devices.ConcreteScanner;
 
-public class Program {
+public class MultipleInheritance {
 
 	public static void main(String[] args) {
 
