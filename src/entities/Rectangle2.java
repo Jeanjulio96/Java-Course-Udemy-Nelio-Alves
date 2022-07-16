@@ -2,14 +2,10 @@ package entities;
 
 import entities.enums.Color;
 
-public class Rectangle2 extends Shape{
+public class Rectangle2 extends AbstractShape{
 
     private Double width;
     private Double height;
-
-    public Rectangle2 (){
-
-    }
 
     public Rectangle2(Color color, Double width, Double height) {
         super(color);
