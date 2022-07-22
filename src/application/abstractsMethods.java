@@ -43,7 +43,7 @@ public class abstractsMethods {
 
                 System.out.println("Radius: ");
                 double radius = sc.nextDouble();
-                list.add(new Circle(color, radius));
+                /*list.add(new Circle(color, radius));*/
 
             }
         }

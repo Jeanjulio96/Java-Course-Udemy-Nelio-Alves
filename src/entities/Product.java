@@ -2,7 +2,7 @@ package entities;
 
 import java.io.Serializable;
 
-public class Product {
+public class Product implements Comparable<Product>{
 
 
     public String name;
@@ -30,5 +30,10 @@ public class Product {
                 + " units, Total: $ "
                 + String.format("%.2f",totalValueInStock());
 
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return 0;
     }
 }

@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Objects;
+
 public class Product2 {
 
     private String name;
@@ -62,5 +64,18 @@ public class Product2 {
                 + quantity
                 + " units, Total: $ "
                 + String.format("%.2f",totalValueInStock());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product2 product2 = (Product2) o;
+        return Double.compare(product2.price, price) == 0 && quantity == product2.quantity && Objects.equals(name, product2.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price, quantity);
     }
 }
