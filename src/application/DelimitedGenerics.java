@@ -30,9 +30,9 @@ public class DelimitedGenerics {
                 line = br.readLine();
             }
 
-            Product4 x = CalculationService.max(list);
+            /*Product4 x = CalculationService.max(list);
             System.out.println("Most expensive:");
-            System.out.println(x);
+            System.out.println(x);*/
 
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
